@@ -1,0 +1,49 @@
+{
+  "name": "your-library",
+  "version": "1.1.2",
+  "description": "A template for a javascript library",
+  "main": "dist/your-library.cjs.js",
+  "module": "dist/your-library.esm.js",
+  "browser": "dist/your-library.umd.js",
+  "types": "dist/main.d.ts",
+  "type": "module",
+  "engines": {
+    "node": "18.x",
+    "npm": "9.x"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.4.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/jest": "^29.4.0",
+    "@types/node": "^18.15.0",
+    "jest": "^29.5.0",
+    "rollup": "^3.19.1",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "build": "rollup -c --environment NODE_ENV:production",
+    "build-dev": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest",
+    "pretest": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/canbax/your-library.git"
+  },
+  "keywords": [],
+  "author": "Yusuf Sait Canbaz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/canbax/your-library/issues"
+  },
+  "homepage": "https://github.com/canbax/your-library#readme"
+}
