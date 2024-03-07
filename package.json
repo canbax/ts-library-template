@@ -39,7 +39,6 @@
     "build-dev": "rollup -c",
     "dev": "rollup -c -w",
     "test": "vitest",
-    "pretest": "npm run build",
     "prepare": "husky",
     "format": "prettier --write .",
     "lint": "eslint --max-warnings=0 ",
