@@ -53,8 +53,8 @@
     // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
     "declaration": true,
     "declarationDir": "./",
-    "types": ["node", "jest"]
+    "types": ["node"]
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "test/**/*"],
   "exclude": ["node_modules", "dist"]
 }
