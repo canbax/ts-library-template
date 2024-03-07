@@ -41,8 +41,8 @@
     "test": "vitest",
     "prepare": "husky",
     "format": "prettier --write .",
-    "lint": "eslint --max-warnings=0 ",
-    "lint-fix": "eslint --max-warnings=0  --fix",
+    "lint": "eslint  . --max-warnings=0 ",
+    "lint-fix": "eslint . --max-warnings=0  --fix",
     "all": "npm run build && npm run build-dev && npm run format && npm run lint && npm run lint-fix"
   },
   "files": [
