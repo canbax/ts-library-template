@@ -1,0 +1,13 @@
+{
+  "extends": ["config:recommended"],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["vitest", "vite", "tsup", "typescript"],
+      "groupName": "build & test tools"
+    }
+  ],
+  "schedule": ["after 9am and before 5pm on monday"],
+  "automerge": true,
+  "automergeType": "pr",
+  "dependencyDashboard": true
+}
