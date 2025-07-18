@@ -2,7 +2,7 @@
   "extends": ["config:recommended"],
   "packageRules": [
     {
-      "matchPackagePatterns": ["vitest", "vite", "tsup", "typescript"],
+      "matchPackagePatterns": ["vitest", "vite", "tsup", "typescript", "oxlint", "prettier", "husky", "lint-staged", "@commitlint/*", "conventional-changelog-*"],
       "groupName": "build & test tools"
     }
   ],
